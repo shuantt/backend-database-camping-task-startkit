@@ -240,7 +240,7 @@ WHERE name = '空中瑜珈';
     -- 5. 授課結束時間`end_at`設定為2024-11-25 16:00:00
     -- 6. 最大授課人數`max_participants` 設定為10
     -- 7. 授課連結設定`meeting_url`為 https://test-meeting.test.io
-INSERT INTO
+INSERT INTO "COURSE"
 ( 
 	user_id ,
 	skill_id,
