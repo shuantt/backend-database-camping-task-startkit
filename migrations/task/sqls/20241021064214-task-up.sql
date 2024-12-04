@@ -259,7 +259,7 @@ VALUES
 	'2024-11-25 16:00:00',
 	10,
 	'https://test-meeting.test.io'
-)
+);
 
 
 
@@ -391,7 +391,7 @@ WHERE user_id = (
 	FROM "USER" 
 	WHERE email = 'wXlTq@hexschooltest.io'
 )
-GROUP BY user_id 
+GROUP BY user_id;
 
 -- 5-7. 查詢：計算用戶王小明的已使用堂數，顯示須包含以下欄位： user_id , total。 (需使用到 Count 函式與 Group By)
 SELECT 	cb.user_id,
@@ -476,7 +476,7 @@ SELECT cpk."name" AS "組合包方案名稱",
 FROM "CREDIT_PURCHASE" AS cpc
 INNER JOIN "CREDIT_PACKAGE" AS cpk ON cpc.credit_package_id = cpk.id 
 WHERE cpc.purchase_at BETWEEN '2024-11-01 00:00:00' AND '2024-12-01 00:00:00'
-GROUP BY cpk."name" ;
+GROUP BY cpk."name";
 
 -- 6-4. 查詢：計算 11 月份總營收（使用 purchase_at 欄位統計）
 -- 顯示須包含以下欄位： 總營收
